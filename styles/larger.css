@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        background: #333;
+    }
+
+    .navigation li {
+        border: none;
+        flex: 1;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .buttons button {
+        flex: 0 0 180px;
+    }
+}
