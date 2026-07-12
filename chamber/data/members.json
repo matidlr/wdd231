@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Allus Global",
+    "address": "Av. Colón 3440, Córdoba, Argentina",
+    "phone": "+54 351 555-1001",
+    "website": "https://www.allusglobal.com",
+    "image": "allus.webp",
+    "membership": 3,
+    "industry": "Technology"
+  },
+  {
+    "name": "Grido Helados",
+    "address": "Av. Vélez Sarsfield 1500, Córdoba, Argentina",
+    "phone": "+54 351 555-1002",
+    "website": "https://www.gridohelado.com",
+    "image": "grido.webp",
+    "membership": 2,
+    "industry": "Food"
+  },
+  {
+    "name": "Patio Olmos Shopping",
+    "address": "Av. Vélez Sarsfield 361, Córdoba, Argentina",
+    "phone": "+54 351 555-1003",
+    "website": "https://www.patioolmos.com",
+    "image": "patio-olmos.webp",
+    "membership": 3,
+    "industry": "Shopping Center"
+  },
+  {
+    "name": "Tarjeta Naranja X",
+    "address": "La Tablada 451, Córdoba, Argentina",
+    "phone": "+54 351 555-1004",
+    "website": "https://www.naranjax.com",
+    "image": "naranjax.webp",
+    "membership": 3,
+    "industry": "Financial Services"
+  },
+  {
+    "name": "Dinosaurio Mall",
+    "address": "Rodríguez del Busto 4086, Córdoba, Argentina",
+    "phone": "+54 351 555-1005",
+    "website": "https://www.grupodinosaurio.com",
+    "image": "dinosaurio.webp",
+    "membership": 2,
+    "industry": "Retail"
+  },
+  {
+    "name": "Córdoba Technology Cluster",
+    "address": "Córdoba, Argentina",
+    "phone": "+54 351 555-1006",
+    "website": "https://www.clustertecnologicocordoba.org",
+    "image": "cluster.webp",
+    "membership": 1,
+    "industry": "Technology Association"
+  },
+  {
+    "name": "Mercado Norte",
+    "address": "Oncativo 50, Córdoba, Argentina",
+    "phone": "+54 351 555-1007",
+    "website": "https://www.mercadonorte.com.ar",
+    "image": "mercado-norte.webp",
+    "membership": 1,
+    "industry": "Public Market"
+  }
+]
