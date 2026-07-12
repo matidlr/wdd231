@@ -1,0 +1,78 @@
+/* larger.css */
+
+@media only screen and (min-width: 768px) {
+
+    /* ---------- Header ---------- */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    /* Hide hamburger menu */
+    #menu-button {
+        display: none;
+    }
+
+    /* Always show navigation on larger screens */
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: .75rem 1rem;
+        border-radius: 5px;
+    }
+
+    /* ---------- Main ---------- */
+
+    main {
+        padding: 2rem;
+    }
+
+    /* ---------- Grid View ---------- */
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    /* ---------- List View ---------- */
+
+    .list .card {
+        display: grid;
+        grid-template-columns: 2fr 2fr 1.5fr 1fr;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    .list .card h2 {
+        margin: 0;
+    }
+
+    /* ---------- Footer ---------- */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 2rem;
+    }
+
+    .footer-contact,
+    .footer-info {
+        width: 45%;
+    }
+}
