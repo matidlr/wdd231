@@ -79,13 +79,13 @@ nav a {
     display: block;
     padding: .8rem;
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 nav a:hover,
 nav a.active {
      background: #003b63;
-    color: white;
+    color: var(--white);
 }
 
 /* ---------- Main ---------- */
@@ -108,6 +108,7 @@ main h1 {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
+    color: var(--white);
 }
 
 .view-buttons button {
