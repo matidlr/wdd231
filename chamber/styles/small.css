@@ -116,7 +116,7 @@ main h1 {
     border: none;
     cursor: pointer;
     background: var(--primary);
-    color: white;
+    color: var(--white);
     border-radius: 6px;
     transition: .3s;
 }
