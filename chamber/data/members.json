@@ -4,7 +4,7 @@
     "address": "Av. Colón 3440, Córdoba, Argentina",
     "phone": "+54 351 555-1001",
     "website": "https://www.allusglobal.com",
-    "image": "allus.webp",
+    "image": "",
     "membership": 3,
     "industry": "Technology"
   },
@@ -31,7 +31,7 @@
     "address": "La Tablada 451, Córdoba, Argentina",
     "phone": "+54 351 555-1004",
     "website": "https://www.naranjax.com",
-    "image": "naranjax.webp",
+    "image": "naranja.webp",
     "membership": 3,
     "industry": "Financial Services"
   },
@@ -40,7 +40,7 @@
     "address": "Rodríguez del Busto 4086, Córdoba, Argentina",
     "phone": "+54 351 555-1005",
     "website": "https://www.grupodinosaurio.com",
-    "image": "dinosaurio.webp",
+    "image": "dino.webp",
     "membership": 2,
     "industry": "Retail"
   },
@@ -49,7 +49,7 @@
     "address": "Córdoba, Argentina",
     "phone": "+54 351 555-1006",
     "website": "https://www.clustertecnologicocordoba.org",
-    "image": "cluster.webp",
+    "image": "clust.webp",
     "membership": 1,
     "industry": "Technology Association"
   },
@@ -58,7 +58,7 @@
     "address": "Oncativo 50, Córdoba, Argentina",
     "phone": "+54 351 555-1007",
     "website": "https://www.mercadonorte.com.ar",
-    "image": "mercado-norte.webp",
+    "image": "mercado.webp",
     "membership": 1,
     "industry": "Public Market"
   }
