@@ -16,8 +16,8 @@
 
     <!-- Open Graph -->
     <meta property="og:title" content="Córdoba Chamber of Commerce">
-    <meta property="og:description" content="Supporting businesses in Córdoba, Argentina.">
-    <meta property="og:image" content="images/cord.webp">
+    <meta property="og:description" content="Discover local businesses, events, and opportunities with the Córdoba Chamber of Commerce in Córdoba, Argentina.">
+    <meta property="og:image" content="https://matidlr.github.io/wdd231/chamber/images/cord.webp">
     <meta property="og:url" content="https://matidlr.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/directory.js"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +43,7 @@
     <div class="logo">
         <img src="images/cord.webp" alt="Chamber Logo" width="70" height="70">
         <div>
-            <h1>Córdoba Chamber</h1>
+            <h2>Córdoba Chamber</h2>
             <p>Supporting Local Business</p>
         </div>
     </div>
@@ -61,16 +65,16 @@
 
     <h1>Business Directory</h1>
 
-    <section class="view-buttons">
+    <div class="view-buttons">
         <button id="grid">Grid View</button>
         <button id="list">List View</button>
-    </section>
+    </div>
 
-    <section id="members" class="grid">
+    <div id="members" class="grid">
 
         <!-- Cards created with JavaScript -->
 
-    </section>
+    </div>
 
 </main>
 
@@ -106,9 +110,7 @@
 
 </footer>
 
-<script src="scripts/navigation.js"></script>
-<script src="scripts/date.js"></script>
-<script src="scripts/directory.js"></script>
+
 
 </body>
 </html>
