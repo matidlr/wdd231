@@ -7,11 +7,11 @@
 }
 
 :root {
-    --primary: #005792;
-    --secondary: #f4a261;
-    --light: #f8f9fa;
-    --dark: #333;
-    --white: #fff;
+    --primary: #00416A;      /* darker blue - good with white text */
+    --secondary: #D97706;    /* darker orange - good contrast */
+    --light: #F8F9FA;
+    --dark: #333333;
+    --white: #FFFFFF;
 }
 
 body {
