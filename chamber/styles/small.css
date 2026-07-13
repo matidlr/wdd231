@@ -7,9 +7,8 @@
 }
 
 :root {
-    --primary: #00416A;      /* darker blue - good with white text */
-    --secondary: #D97706;    /* darker orange - good contrast */
-    --light: #F8F9FA;
+    --primary: #00416A;      
+    --secondary: #ce6f02;    
     --dark: #333333;
     --white: #FFFFFF;
 }
