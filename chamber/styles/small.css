@@ -24,8 +24,8 @@ body {
 /* ---------- Header ---------- */
 
 header {
-    background: var(--primary);
-    color: var(--white);
+   background: var(--primary);
+    color: white;
     padding: 1rem;
 }
 
@@ -85,7 +85,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background: rgba(255,255,255,.2);
+     background: #003b63;
+    color: white;
 }
 
 /* ---------- Main ---------- */
