@@ -202,3 +202,31 @@ footer {
 .footer-info p {
     margin: .4rem 0;
 }
+
+#spotlight-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card a {
+    color: #004080;
+    text-decoration: none;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}

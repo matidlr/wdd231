@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Córdoba Chamber of Commerce | Home</title>
+
+    <meta name="description" content="Welcome to the Córdoba Chamber of Commerce. Discover local businesses, current events, weather, and featured chamber members.">
+    <meta name="author" content="Matias de la Rosa">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/cord.webp">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Córdoba Chamber of Commerce">
+    <meta property="og:description" content="Supporting local businesses in Córdoba, Argentina.">
+    <meta property="og:image" content="https://matidlr.github.io/wdd231/chamber/images/cord.webp">
+    <meta property="og:url" content="https://matidlr.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/weather.js"></script>
+    <script type="module" src="scripts/spotlights.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="images/cord.webp" alt="Chamber Logo" width="70" height="70">
+
+        <div>
+            <h2>Córdoba Chamber</h2>
+            <p>Supporting Local Business</p>
+        </div>
+    </div>
+
+    <button id="menu-button" aria-label="Open navigation menu">&#9776;</button>
+
+    <nav id="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <img
+            src="images/hero.webp"
+            alt="Downtown Córdoba"
+            loading="lazy">
+
+        <div class="hero-content">
+
+            <h1>Córdoba Chamber of Commerce</h1>
+
+            <p>
+                Connecting businesses, strengthening our community,
+                and creating opportunities for growth.
+            </p>
+
+            <a href="join.html" class="cta-button">
+                Join the Chamber
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="home-grid">
+
+        <section class="events">
+
+            <h2>Current Events</h2>
+
+            <article>
+
+                <h3>Business Networking Breakfast</h3>
+
+                <p>
+                    Meet local entrepreneurs every Friday at 8:00 AM
+                    at the Córdoba Convention Center.
+                </p>
+
+            </article>
+
+        </section>
+
+        <section class="weather">
+
+            <h2>Weather</h2>
+
+            <p><strong>Current Temperature:</strong> <span id="current-temp"></span></p>
+
+            <p><strong>Conditions:</strong> <span id="weather-desc"></span></p>
+
+            <h3>3-Day Forecast</h3>
+
+            <div id="forecast"></div>
+
+        </section>
+
+    </section>
+
+    <section class="spotlights">
+
+        <h2>Member Spotlights</h2>
+
+        <div id="spotlight-container">
+
+            <!-- JavaScript inserts spotlight cards -->
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <div class="footer-contact">
+
+        <h3>Córdoba Chamber of Commerce</h3>
+
+        <p>Av. Colón 450</p>
+
+        <p>Córdoba, Argentina</p>
+
+        <p>info@cordobachamber.org</p>
+
+        <p>+54 351 555 5555</p>
+
+    </div>
+
+    <div class="footer-info">
+
+        <p>
+            © <span id="year"></span>
+            Matias de la Rosa | WDD 231
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
