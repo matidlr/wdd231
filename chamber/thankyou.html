@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0">
@@ -10,101 +13,243 @@
 
     <meta
         name="description"
-        content="Thank you for applying for membership with the Córdoba Chamber of Commerce.">
+        content="Thank you for submitting your membership application to the Córdoba Chamber of Commerce. Review your application details and connect with our business community.">
 
     <meta
         name="author"
         content="Matias de la Rosa">
 
+
+    <!-- Open Graph -->
+
+    <meta
+        property="og:title"
+        content="Thank You | Córdoba Chamber of Commerce">
+
+    <meta
+        property="og:description"
+        content="Thank you for submitting your membership application to the Córdoba Chamber of Commerce. Review your application details and connect with our business community.">
+
+    <meta
+        property="og:image"
+        content="https://matidlr.github.io/wdd231/chamber/images/cord.webp">
+
+    <meta
+        property="og:url"
+        content="https://matidlr.github.io/wdd231/chamber/thankyou.html">
+
+    <meta
+        property="og:type"
+        content="website">
+
+
     <link rel="icon" href="favicon.ico">
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS -->
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
+
+    <!-- JavaScript -->
+
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/thankyou.js" defer></script>
+
 </head>
+
 
 <body>
 
 <header>
 
     <div class="logo">
-        <img src="images/cord.webp" alt="Córdoba Chamber of Commerce Logo" width="80" height="80">
+
+        <img
+            src="images/cord.webp"
+            alt="Córdoba Chamber of Commerce logo"
+            width="80"
+            height="80">
 
         <div>
-            <h1>Córdoba Chamber of Commerce</h1>
-            <p>Connecting Businesses</p>
+
+            <p class="site-name">
+                Córdoba Chamber of Commerce
+            </p>
+
+            <p>
+                Connecting Businesses
+            </p>
+
         </div>
+
     </div>
 
-    <button id="menu" aria-label="Open Navigation"></button>
 
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="discover.html">Discover</a>
-        <a href="join.html">Join</a>
+    <button
+        id="menu"
+        aria-label="Open navigation menu">
+    </button>
+
+
+    <nav
+        class="navigation"
+        aria-label="Main Navigation">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="directory.html">
+            Directory
+        </a>
+
+        <a href="discover.html">
+            Discover
+        </a>
+
+        <a href="join.html">
+            Join
+        </a>
+
     </nav>
+
 
 </header>
 
+
 <main class="thankyou-page">
 
-    <h1>Thank You!</h1>
+
+    <h1>
+        Thank You for Joining the Córdoba Chamber of Commerce
+    </h1>
+
 
     <p>
         Thank you for applying for membership with the Córdoba Chamber of Commerce.
-        We have received your application successfully.
+        Your application has been successfully received.
     </p>
+
 
     <section class="application-summary">
 
-        <h2>Application Information</h2>
+        <h2>
+            Application Information
+        </h2>
 
-        <p><strong>First Name:</strong> <span id="firstname"></span></p>
 
-        <p><strong>Last Name:</strong> <span id="lastname"></span></p>
+        <p>
+            <strong>First Name:</strong>
+            <span id="firstname"></span>
+        </p>
 
-        <p><strong>Email:</strong> <span id="email"></span></p>
 
-        <p><strong>Mobile Phone:</strong> <span id="phone"></span></p>
+        <p>
+            <strong>Last Name:</strong>
+            <span id="lastname"></span>
+        </p>
 
-        <p><strong>Business Name:</strong> <span id="business"></span></p>
 
-        <p><strong>Submitted:</strong> <span id="timestamp"></span></p>
+        <p>
+            <strong>Email:</strong>
+            <span id="email"></span>
+        </p>
+
+
+        <p>
+            <strong>Mobile Phone:</strong>
+            <span id="phone"></span>
+        </p>
+
+
+        <p>
+            <strong>Business Name:</strong>
+            <span id="business"></span>
+        </p>
+
+
+        <p>
+            <strong>Submitted:</strong>
+            <span id="timestamp"></span>
+        </p>
+
 
     </section>
+
 
 </main>
 
+
+
 <footer>
 
-    <section>
-
-        <h3>Córdoba Chamber of Commerce</h3>
-
-        <p>123 Main Street</p>
-        <p>Córdoba, Argentina</p>
-        <p>info@cordobachamber.org</p>
-        <p>+54 351 555-1234</p>
-
-    </section>
 
     <section>
 
-        <p>&copy; <span id="currentyear"></span> Córdoba Chamber of Commerce</p>
+        <h2>
+            Córdoba Chamber of Commerce
+        </h2>
 
-        <p>Matias de la Rosa</p>
+        <address>
 
-        <p>WDD231 Chamber Project</p>
+            123 Main Street<br>
+            Córdoba, Argentina<br>
 
-        <p>Last Modification: <span id="lastModified"></span></p>
+            <a href="mailto:info@cordobachamber.org">
+                info@cordobachamber.org
+            </a>
+            <br>
+
+            <a href="tel:+543515551234">
+                +54 351 555-1234
+            </a>
+
+        </address>
 
     </section>
+
+
+    <section>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Córdoba Chamber of Commerce
+        </p>
+
+        <p>
+            Matias de la Rosa
+        </p>
+
+        <p>
+            WDD231 Chamber Project
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+
+    </section>
+
 
 </footer>
 
+
 </body>
+
 </html>
