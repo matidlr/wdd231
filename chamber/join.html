@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Join | Córdoba Chamber of Commerce</title>
+
+    <meta
+        name="description"
+        content="Apply for membership with the Córdoba Chamber of Commerce.">
+
+    <meta
+        name="author"
+        content="Matias de la Rosa">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="images/cord.webp" alt="Córdoba Chamber of Commerce Logo" width="80" height="80">
+        <div>
+            <h1>Córdoba Chamber of Commerce</h1>
+            <p>Connecting Businesses</p>
+        </div>
+    </div>
+
+    <button id="menu" aria-label="Open Navigation"></button>
+
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="discover.html">Discover</a>
+        <a href="join.html" class="active">Join</a>
+    </nav>
+
+</header>
+
+<main class="join-page">
+
+    <h1>Membership Application</h1>
+
+    <div class="join-container">
+
+        <!-- FORM -->
+
+        <section class="application">
+
+            <form method="get" action="thankyou.html">
+
+                <label>
+                    First Name
+                    <input
+                        type="text"
+                        id="firstname"
+                        name="firstname"
+                        required
+                        autocomplete="given-name"
+                        title="Enter your first name">
+                </label>
+
+                <label>
+                    Last Name
+                    <input
+                        type="text"
+                        id="lastname"
+                        name="lastname"
+                        required
+                        autocomplete="family-name"
+                        title="Enter your last name">
+                </label>
+
+                <label>
+                    Organizational Title
+                    <input
+                        type="text"
+                        id="orgtitle"
+                        name="orgtitle"
+                        autocomplete="organization-title"
+                        title="Only letters, hyphens and spaces. Minimum seven characters."
+                        pattern="[A-Za-z\- ]{7,}">
+                </label>
+
+                <label>
+                    Email Address
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        placeholder="john@email.com"
+                        title="Enter your email address">
+                </label>
+
+                <label>
+                    Mobile Phone
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        required
+                        autocomplete="tel"
+                        title="Enter your mobile phone number">
+                </label>
+
+                <label>
+                    Business / Organization Name
+                    <input
+                        type="text"
+                        id="business"
+                        name="business"
+                        required
+                        autocomplete="organization"
+                        title="Enter your business name">
+                </label>
+
+                <label>
+                    Membership Level
+                    <select
+                        id="membership"
+                        name="membership">
+
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+
+                    </select>
+                </label>
+
+                <label>
+                    Business Description
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="6"
+                        title="Describe your business"></textarea>
+                </label>
+
+                <input
+                    type="hidden"
+                    id="timestamp"
+                    name="timestamp">
+
+                <input
+                    type="submit"
+                    value="Apply for Membership"
+                    class="submit-btn">
+
+            </form>
+
+        </section>
+
+        <!-- MEMBERSHIP CARDS -->
+
+        <aside class="membership-levels">
+
+            <article class="membership-card">
+
+                <h2>NP Membership</h2>
+
+                <p>For nonprofit organizations with no annual fee.</p>
+
+                <a href="#" id="npLink">Learn More</a>
+
+            </article>
+
+            <article class="membership-card">
+
+                <h2>Bronze Membership</h2>
+
+                <p>Great for small businesses looking to grow.</p>
+
+                <a href="#" id="bronzeLink">Learn More</a>
+
+            </article>
+
+            <article class="membership-card">
+
+                <h2>Silver Membership</h2>
+
+                <p>Extra visibility and member discounts.</p>
+
+                <a href="#" id="silverLink">Learn More</a>
+
+            </article>
+
+            <article class="membership-card">
+
+                <h2>Gold Membership</h2>
+
+                <p>Maximum exposure and premium business benefits.</p>
+
+                <a href="#" id="goldLink">Learn More</a>
+
+            </article>
+
+        </aside>
+
+    </div>
+
+</main>
+
+<!-- NP -->
+
+<dialog id="npModal">
+
+    <h2>NP Membership</h2>
+
+    <p>
+        Designed for nonprofit organizations with no membership fee.
+    </p>
+
+    <ul>
+        <li>Free membership</li>
+        <li>Business directory listing</li>
+        <li>Networking events</li>
+        <li>Community involvement opportunities</li>
+    </ul>
+
+    <button id="closeNP">Close</button>
+
+</dialog>
+
+<!-- BRONZE -->
+
+<dialog id="bronzeModal">
+
+    <h2>Bronze Membership</h2>
+
+    <p>
+        A great option for growing businesses.
+    </p>
+
+    <ul>
+        <li>Everything included in NP Membership</li>
+        <li>Business workshops</li>
+        <li>Monthly newsletter</li>
+        <li>Discounted event registration</li>
+    </ul>
+
+    <button id="closeBronze">Close</button>
+
+</dialog>
+
+<!-- SILVER -->
+
+<dialog id="silverModal">
+
+    <h2>Silver Membership</h2>
+
+    <p>
+        More opportunities to promote your business.
+    </p>
+
+    <ul>
+        <li>Everything in Bronze</li>
+        <li>Advertising opportunities</li>
+        <li>Social media promotion</li>
+        <li>Special event discounts</li>
+        <li>Business networking sessions</li>
+    </ul>
+
+    <button id="closeSilver">Close</button>
+
+</dialog>
+
+<!-- GOLD  -->
+
+<dialog id="goldModal">
+
+    <h2>Gold Membership</h2>
+
+    <p>
+        Our highest membership level with premium benefits.
+    </p>
+
+    <ul>
+        <li>Everything included in Silver</li>
+        <li>Homepage Spotlight advertising</li>
+        <li>VIP networking events</li>
+        <li>Premium advertising placement</li>
+        <li>Priority sponsorship opportunities</li>
+        <li>Featured business promotions</li>
+    </ul>
+
+    <button id="closeGold">Close</button>
+
+</dialog>
+
+<footer>
+
+    <section>
+
+        <h3>Córdoba Chamber of Commerce</h3>
+
+        <p>123 Main Street</p>
+        <p>Córdoba, Argentina</p>
+        <p>info@cordobachamber.org</p>
+        <p>+54 351 555-1234</p>
+
+    </section>
+
+    <section>
+
+        <p>&copy; <span id="currentyear"></span> Córdoba Chamber of Commerce</p>
+        <p>Matias de la Rosa</p>
+        <p>WDD231 Chamber Project</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+
+    </section>
+
+</footer>
+
+</body>
+</html>

@@ -230,3 +230,21 @@ footer {
 .spotlight-card a:hover {
     text-decoration: underline;
 }
+
+.thankyou-page {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.application-summary {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: .75rem;
+    background: #f7f7f7;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.application-summary p {
+    margin: .75rem 0;
+}
