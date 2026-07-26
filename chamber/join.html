@@ -2,26 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Join | Córdoba Chamber of Commerce</title>
 
-    <meta
-        name="description"
-        content="Apply for membership with the Córdoba Chamber of Commerce.">
+    <meta name="description"
+        content="Join the Córdoba Chamber of Commerce to connect with local businesses, expand your network, and enjoy exclusive member benefits.">
 
-    <meta
-        name="author"
-        content="Matias de la Rosa">
+    <meta name="author" content="Matias de la Rosa">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Join | Córdoba Chamber of Commerce">
+    <meta property="og:description"
+        content="Join the Córdoba Chamber of Commerce to connect with local businesses, expand your network, and enjoy exclusive member benefits.">
+    <meta property="og:image"
+        content="https://matidlr.github.io/wdd231/chamber/images/chamber-social.webp">
+    <meta property="og:url"
+        content="https://matidlr.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
 
     <link rel="icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/join.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/join.js" defer></script>
 </head>
@@ -31,125 +46,166 @@
 <header>
 
     <div class="logo">
-        <img src="images/cord.webp" alt="Córdoba Chamber of Commerce Logo" width="80" height="80">
+        <img
+            src="images/cord.webp"
+            alt="Córdoba Chamber of Commerce logo"
+            width="80"
+            height="80">
+
         <div>
             <h1>Córdoba Chamber of Commerce</h1>
             <p>Connecting Businesses</p>
         </div>
     </div>
 
-    <button id="menu" aria-label="Open Navigation"></button>
+    <button
+        id="menu"
+        aria-label="Open navigation menu">
+    </button>
 
-    <nav class="navigation">
+    <nav class="navigation" aria-label="Main Navigation">
+
         <a href="index.html">Home</a>
         <a href="directory.html">Directory</a>
         <a href="discover.html">Discover</a>
         <a href="join.html" class="active">Join</a>
+
     </nav>
 
 </header>
 
 <main class="join-page">
 
-    <h1>Membership Application</h1>
+    <h1>Join the Córdoba Chamber of Commerce</h1>
 
     <div class="join-container">
 
-        <!-- FORM -->
-
         <section class="application">
 
-            <form method="get" action="thankyou.html">
+            <h2>Membership Application</h2>
 
-                <label>
+            <form
+                method="get"
+                action="thankyou.html"
+                autocomplete="on">
+
+                <label for="firstname">
                     First Name
-                    <input
-                        type="text"
-                        id="firstname"
-                        name="firstname"
-                        required
-                        autocomplete="given-name"
-                        title="Enter your first name">
                 </label>
 
-                <label>
+                <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    required
+                    autocomplete="given-name"
+                    title="Enter your first name">
+
+                <label for="lastname">
                     Last Name
-                    <input
-                        type="text"
-                        id="lastname"
-                        name="lastname"
-                        required
-                        autocomplete="family-name"
-                        title="Enter your last name">
                 </label>
 
-                <label>
+                <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    required
+                    autocomplete="family-name"
+                    title="Enter your last name">
+
+                <label for="orgtitle">
                     Organizational Title
-                    <input
-                        type="text"
-                        id="orgtitle"
-                        name="orgtitle"
-                        autocomplete="organization-title"
-                        title="Only letters, hyphens and spaces. Minimum seven characters."
-                        pattern="[A-Za-z\- ]{7,}">
                 </label>
 
-                <label>
+                <input
+                    type="text"
+                    id="orgtitle"
+                    name="orgtitle"
+                    autocomplete="organization-title"
+                    title="Letters, spaces and hyphens only. Minimum seven characters."
+                    pattern="[A-Za-z\- ]{7,}">
+
+                <label for="email">
                     Email Address
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        autocomplete="email"
-                        placeholder="john@email.com"
-                        title="Enter your email address">
                 </label>
 
-                <label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder="john@email.com"
+                    title="Enter your email address">
+
+                <label for="phone">
                     Mobile Phone
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        required
-                        autocomplete="tel"
-                        title="Enter your mobile phone number">
                 </label>
 
-                <label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    autocomplete="tel"
+                    placeholder="+54 351 555-1234"
+                    title="Enter your mobile phone number">
+
+                <label for="business">
                     Business / Organization Name
-                    <input
-                        type="text"
-                        id="business"
-                        name="business"
-                        required
-                        autocomplete="organization"
-                        title="Enter your business name">
                 </label>
 
-                <label>
+                <input
+                    type="text"
+                    id="business"
+                    name="business"
+                    required
+                    autocomplete="organization"
+                    placeholder="ABC Company"
+                    title="Enter your business or organization name">
+
+                <label for="membership">
                     Membership Level
-                    <select
-                        id="membership"
-                        name="membership">
-
-                        <option value="np">NP Membership</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-
-                    </select>
                 </label>
 
-                <label>
+                <select
+                    id="membership"
+                    name="membership"
+                    required>
+
+                    <option value="" selected disabled>
+                        Select a membership level
+                    </option>
+
+                    <option value="np">
+                        NP Membership
+                    </option>
+
+                    <option value="bronze">
+                        Bronze Membership
+                    </option>
+
+                    <option value="silver">
+                        Silver Membership
+                    </option>
+
+                    <option value="gold">
+                        Gold Membership
+                    </option>
+
+                </select>
+
+                <label for="description">
                     Business Description
-                    <textarea
-                        id="description"
-                        name="description"
-                        rows="6"
-                        title="Describe your business"></textarea>
                 </label>
+
+                <textarea
+                    id="description"
+                    name="description"
+                    rows="6"
+                    placeholder="Tell us about your organization..."
+                    title="Describe your organization">
+                </textarea>
 
                 <input
                     type="hidden"
@@ -165,47 +221,63 @@
 
         </section>
 
-        <!-- MEMBERSHIP CARDS -->
-
         <aside class="membership-levels">
 
+            <h2>Membership Levels</h2>
+
             <article class="membership-card">
 
-                <h2>NP Membership</h2>
+                <h3>NP Membership</h3>
 
-                <p>For nonprofit organizations with no annual fee.</p>
+                <p>
+                    Ideal for nonprofit organizations with no annual fee.
+                </p>
 
-                <a href="#" id="npLink">Learn More</a>
+                <a href="#" id="npLink">
+                    Learn More
+                </a>
 
             </article>
 
             <article class="membership-card">
 
-                <h2>Bronze Membership</h2>
+                <h3>Bronze Membership</h3>
 
-                <p>Great for small businesses looking to grow.</p>
+                <p>
+                    Great for growing businesses looking to increase visibility.
+                </p>
 
-                <a href="#" id="bronzeLink">Learn More</a>
-
-            </article>
-
-            <article class="membership-card">
-
-                <h2>Silver Membership</h2>
-
-                <p>Extra visibility and member discounts.</p>
-
-                <a href="#" id="silverLink">Learn More</a>
+                <a href="#" id="bronzeLink">
+                    Learn More
+                </a>
 
             </article>
 
             <article class="membership-card">
 
-                <h2>Gold Membership</h2>
+                <h3>Silver Membership</h3>
 
-                <p>Maximum exposure and premium business benefits.</p>
+                <p>
+                    Expanded marketing opportunities and member discounts.
+                </p>
 
-                <a href="#" id="goldLink">Learn More</a>
+                <a href="#" id="silverLink">
+                    Learn More
+                </a>
+
+            </article>
+
+            <article class="membership-card">
+
+                <h3>Gold Membership</h3>
+
+                <p>
+                    Premium benefits with maximum exposure for your business.
+                </p>
+
+                <a href="#" id="goldLink">
+                    Learn More
+                </a>
 
             </article>
 
@@ -214,83 +286,118 @@
     </div>
 
 </main>
+<!-- ===================== -->
+<!-- NP MEMBERSHIP MODAL -->
+<!-- ===================== -->
 
-<!-- NP -->
+<dialog
+    id="npModal"
+    aria-labelledby="npHeading"
+    aria-modal="true">
 
-<dialog id="npModal">
-
-    <h2>NP Membership</h2>
+    <h2 id="npHeading">NP Membership</h2>
 
     <p>
-        Designed for nonprofit organizations with no membership fee.
+        NP Membership is designed for nonprofit organizations that want to
+        connect with the local business community at no annual cost.
     </p>
 
     <ul>
-        <li>Free membership</li>
+        <li>No annual membership fee</li>
         <li>Business directory listing</li>
-        <li>Networking events</li>
-        <li>Community involvement opportunities</li>
+        <li>Networking opportunities</li>
+        <li>Community event participation</li>
     </ul>
 
-    <button id="closeNP">Close</button>
+    <button
+        type="button"
+        id="closeNP">
+        Close
+    </button>
 
 </dialog>
 
-<!-- BRONZE -->
+<!-- ===================== -->
+<!-- BRONZE MEMBERSHIP MODAL -->
+<!-- ===================== -->
 
-<dialog id="bronzeModal">
+<dialog
+    id="bronzeModal"
+    aria-labelledby="bronzeHeading"
+    aria-modal="true">
 
-    <h2>Bronze Membership</h2>
+    <h2 id="bronzeHeading">Bronze Membership</h2>
 
     <p>
-        A great option for growing businesses.
+        Bronze Membership provides additional opportunities for small
+        businesses that want to increase their visibility.
     </p>
 
     <ul>
-        <li>Everything included in NP Membership</li>
-        <li>Business workshops</li>
-        <li>Monthly newsletter</li>
+        <li>All NP Membership benefits</li>
+        <li>Business workshops and training</li>
+        <li>Monthly Chamber newsletter</li>
         <li>Discounted event registration</li>
     </ul>
 
-    <button id="closeBronze">Close</button>
+    <button
+        type="button"
+        id="closeBronze">
+        Close
+    </button>
 
 </dialog>
 
-<!-- SILVER -->
+<!-- ===================== -->
+<!-- SILVER MEMBERSHIP MODAL -->
+<!-- ===================== -->
 
-<dialog id="silverModal">
+<dialog
+    id="silverModal"
+    aria-labelledby="silverHeading"
+    aria-modal="true">
 
-    <h2>Silver Membership</h2>
+    <h2 id="silverHeading">Silver Membership</h2>
 
     <p>
-        More opportunities to promote your business.
+        Silver Membership offers greater promotional opportunities and
+        increased business exposure.
     </p>
 
     <ul>
-        <li>Everything in Bronze</li>
+        <li>All Bronze Membership benefits</li>
         <li>Advertising opportunities</li>
         <li>Social media promotion</li>
         <li>Special event discounts</li>
         <li>Business networking sessions</li>
     </ul>
 
-    <button id="closeSilver">Close</button>
+    <button
+        type="button"
+        id="closeSilver">
+        Close
+    </button>
 
 </dialog>
 
-<!-- GOLD  -->
+<!-- ===================== -->
+<!-- GOLD MEMBERSHIP MODAL -->
+<!-- ===================== -->
 
-<dialog id="goldModal">
+<dialog
+    id="goldModal"
+    aria-labelledby="goldHeading"
+    aria-modal="true">
 
-    <h2>Gold Membership</h2>
+    <h2 id="goldHeading">Gold Membership</h2>
 
     <p>
-        Our highest membership level with premium benefits.
+        Gold Membership is our highest level and provides maximum visibility,
+        advertising, and networking opportunities.
     </p>
 
     <ul>
-        <li>Everything included in Silver</li>
+        <li>All Silver Membership benefits</li>
         <li>Homepage Spotlight advertising</li>
         <li>VIP networking events</li>
         <li>Premium advertising placement</li>
@@ -298,7 +405,11 @@
         <li>Featured business promotions</li>
     </ul>
 
-    <button id="closeGold">Close</button>
+    <button
+        type="button"
+        id="closeGold">
+        Close
+    </button>
 
 </dialog>
 
@@ -306,21 +417,83 @@
 
     <section>
 
-        <h3>Córdoba Chamber of Commerce</h3>
+        <h2>Córdoba Chamber of Commerce</h2>
 
-        <p>123 Main Street</p>
-        <p>Córdoba, Argentina</p>
-        <p>info@cordobachamber.org</p>
-        <p>+54 351 555-1234</p>
+        <address>
+            123 Main Street<br>
+            Córdoba, Argentina<br>
+            <a href="mailto:info@cordobachamber.org">
+                info@cordobachamber.org
+            </a><br>
+            <a href="tel:+543515551234">
+                +54 351 555-1234
+            </a>
+        </address>
+
+    </section>
+
+    <section class="social-links">
+
+        <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit our Facebook page">
+
+            <img
+                src="images/facebook.svg"
+                alt="Facebook"
+                width="32"
+                height="32">
+
+        </a>
+
+        <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit our Instagram page">
+
+            <img
+                src="images/instagram.svg"
+                alt="Instagram"
+                width="32"
+                height="32">
+
+        </a>
+
+        <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit our LinkedIn page">
+
+            <img
+                src="images/linkedin.svg"
+                alt="LinkedIn"
+                width="32"
+                height="32">
+
+        </a>
 
     </section>
 
     <section>
 
-        <p>&copy; <span id="currentyear"></span> Córdoba Chamber of Commerce</p>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Córdoba Chamber of Commerce
+        </p>
+
         <p>Matias de la Rosa</p>
-        <p>WDD231 Chamber Project</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+
+        <p>WDD 231 Chamber Project</p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
 
     </section>
 
