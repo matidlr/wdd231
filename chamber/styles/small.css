@@ -7,19 +7,30 @@
 }
 
 :root {
-    --primary: #00416A;      
-    --secondary: #8A4500;  
+    --primary: #00416A;
+    --secondary: #8A4500;
     --dark: #333333;
     --white: #FFFFFF;
+    --light: #f7f7f7;
 }
 
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Open Sans", sans-serif;
     background: var(--light);
     color: var(--dark);
     line-height: 1.6;
 }
 
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
 /* ---------- Header ---------- */
 
 header {
@@ -88,13 +99,7 @@ nav a.active {
     color: var(--white);
 }
 
-/* ---------- Main ---------- */
 
-main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-}
 
 main h1 {
     text-align: center;
