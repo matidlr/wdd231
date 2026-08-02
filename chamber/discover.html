@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber Discover Page | Area Highlights</title>
+  <meta name="description" content="Discover points of interest, demographics, and features of our community chamber area.">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/discover.css">
+  <script type="module" src="scripts/discover.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.webp" alt="Chamber Logo" width="50" height="50">
+      <span>Chamber of Commerce</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" class="active">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover Our Community</h1>
+
+    <!-- Last Visit Message Container -->
+    <div id="visit-message" class="visit-banner"></div>
+
+    <!-- 8 Cards Container utilizing CSS Grid Areas -->
+    <section class="discover-grid" id="discover-cards">
+      <!-- Dynamic cards will render here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Chamber of Commerce | WDD231</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
