@@ -24,28 +24,28 @@ export const items = [
     name: "Downtown Art Gallery",
     address: "12 Commerce Ave, Cityville, ST 12345",
     description: "Showcasing original works from regional artists, hosting monthly public workshops, and exhibitions.",
-    image: "images/gallery.webp",
+    image: "images/artgallery.webp",
     alt: "Art pieces displayed inside Downtown Art Gallery"
   },
   {
     name: "Civic Performing Arts Center",
     address: "88 Theater Blvd, Cityville, ST 12345",
     description: "The home of local theater productions, symphony concerts, and live touring performances.",
-    image: "images/arts-center.webp",
+    image: "images/exterior.webp",
     alt: "Exterior view of Civic Performing Arts Center"
   },
   {
     name: "City Botanical Gardens",
     address: "310 Garden Lane, Cityville, ST 12345",
     description: "Features indoor conservatories, rare plant species, and peaceful walking pathways year-round.",
-    image: "images/botanical.webp",
+    image: "images/botanico.webp",
     alt: "Lush greenery inside City Botanical Gardens"
   },
   {
     name: "Chamber Business Hub",
     address: "101 Enterprise Way, Cityville, ST 12345",
     description: "Co-working space and resources for local entrepreneurs, small businesses, and startups.",
-    image: "images/business-hub.webp",
+    image: "images/business-hubb.webp",
     alt: "Modern co-working space in Chamber Business Hub"
   },
   {
