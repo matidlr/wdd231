@@ -11,54 +11,46 @@ const menuButton = document.querySelector("#menu-button");
 const navigation = document.querySelector("#primary-navigation");
 
 if (menuButton && navigation) {
+    menuButton.addEventListener("click", () => {
+        navigation.classList.toggle("open");
 
-```
-menuButton.addEventListener("click", () => {
-
-    const isOpen = navigation.classList.toggle("open");
-
-    menuButton.setAttribute(
-        "aria-expanded",
-        isOpen.toString()
-    );
-
-    menuButton.setAttribute(
-        "aria-label",
-        isOpen
-            ? "Close navigation menu"
-            : "Open navigation menu"
-    );
-
-    menuButton.textContent = isOpen ? "✕" : "☰";
-});
-
-
-const navigationLinks =
-    navigation.querySelectorAll("a");
-
-
-navigationLinks.forEach((link) => {
-
-    link.addEventListener("click", () => {
-
-        navigation.classList.remove("open");
+        const isOpen = navigation.classList.contains("open");
 
         menuButton.setAttribute(
             "aria-expanded",
-            "false"
+            isOpen.toString()
         );
 
         menuButton.setAttribute(
             "aria-label",
-            "Open navigation menu"
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
         );
 
-        menuButton.textContent = "☰";
+        menuButton.textContent = isOpen ? "✕" : "☰";
     });
 
-});
-```
+    const navigationLinks =
+        navigation.querySelectorAll("a");
 
+    navigationLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            navigation.classList.remove("open");
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuButton.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+            menuButton.textContent = "☰";
+        });
+    });
 }
 
 // =========================================================
@@ -66,15 +58,11 @@ navigationLinks.forEach((link) => {
 // =========================================================
 
 const currentYear =
-document.querySelector("#current-year");
+    document.querySelector("#current-year");
 
 if (currentYear) {
-
-```
-currentYear.textContent =
-    new Date().getFullYear();
-```
-
+    currentYear.textContent =
+        new Date().getFullYear().toString();
 }
 
 // =========================================================
