@@ -3,9 +3,9 @@
 // Shared JavaScript
 // =========================================================
 
-// -------------------------
-// Mobile navigation
-// -------------------------
+// =========================================================
+// MOBILE NAVIGATION
+// =========================================================
 
 const menuButton = document.querySelector("#menu-button");
 const navigation = document.querySelector("#primary-navigation");
@@ -16,7 +16,8 @@ if (menuButton && navigation) {
 
         const isOpen = navigation.classList.contains("open");
 
-        menuButton.setAttribute("aria-expanded", isOpen);
+        menuButton.setAttribute("aria-expanded", isOpen.toString());
+
         menuButton.setAttribute(
             "aria-label",
             isOpen ? "Close navigation menu" : "Open navigation menu"
@@ -32,6 +33,7 @@ if (menuButton && navigation) {
             navigation.classList.remove("open");
 
             menuButton.setAttribute("aria-expanded", "false");
+
             menuButton.setAttribute(
                 "aria-label",
                 "Open navigation menu"
@@ -42,9 +44,9 @@ if (menuButton && navigation) {
     });
 }
 
-// -------------------------
-// Current year
-// -------------------------
+// =========================================================
+// CURRENT YEAR
+// =========================================================
 
 const currentYear = document.querySelector("#current-year");
 
@@ -52,12 +54,13 @@ if (currentYear) {
     currentYear.textContent = new Date().getFullYear();
 }
 
-// -------------------------
-// Last modified
-// -------------------------
+// =========================================================
+// LAST MODIFIED
+// =========================================================
 
 const lastModified = document.querySelector("#last-modified");
 
 if (lastModified) {
-    lastModified.textContent = `Last Modified: ${document.lastModified}`;
+    lastModified.textContent =
+        `Last Modified: ${document.lastModified}`;
 }
