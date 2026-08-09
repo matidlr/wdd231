@@ -1,60 +1,105 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Padel Clubs & Equipment | Padel Community Hub</title>
+```
+<meta charset="UTF-8">
 
-    <meta
-        name="description"
-        content="Discover local padel clubs and explore equipment recommendations including rackets, shoes, balls, and accessories."
-    >
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-    <meta name="author" content="Matias de la Rosa">
+<title>Padel Clubs &amp; Equipment | Padel Community Hub</title>
 
-    <!-- Open Graph -->
-    <meta
-        property="og:title"
-        content="Padel Clubs & Equipment | Padel Community Hub"
-    >
+<meta
+    name="description"
+    content="Discover local padel clubs and explore equipment recommendations including rackets, shoes, balls, and accessories."
+>
 
-    <meta
-        property="og:description"
-        content="Find padel clubs and discover recommended rackets, shoes, balls, and accessories."
-    >
+<meta
+    name="author"
+    content="Matias de la Rosa"
+>
 
-    <meta property="og:type" content="website">
+<!-- Open Graph metadata -->
 
-    <meta
-        property="og:image"
-        content="images/padel-club.webp"
-    >
+<meta
+    property="og:title"
+    content="Padel Clubs &amp; Equipment | Padel Community Hub"
+>
 
-    <meta
-        property="og:url"
-        content="https://matidlr.github.io/wdd231/final/clubs.html"
-    >
+<meta
+    property="og:description"
+    content="Find padel clubs and discover recommended rackets, shoes, balls, and accessories."
+>
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/padel.avif">
+<meta
+    property="og:type"
+    content="website"
+>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/base.css">
+<meta
+    property="og:image"
+    content="https://matidlr.github.io/wdd231/final/images/padel-club.webp"
+>
 
-    <!-- JavaScript -->
-    <script type="module" src="scripts/clubs.js"></script>
+<meta
+    property="og:url"
+    content="https://matidlr.github.io/wdd231/final/clubs.html"
+>
+
+<!-- Favicon -->
+
+<link
+    rel="icon"
+    href="images/padel.avif"
+    type="image/avif"
+>
+
+<!-- CSS -->
+
+<link
+    rel="stylesheet"
+    href="styles/base.css"
+>
+
+<!-- JavaScript -->
+
+<script
+    type="module"
+    src="scripts/clubs.js"
+></script>
+```
+
 </head>
 
 <body>
 
+```
 <header class="site-header">
 
     <div class="header-container">
 
-        <a class="logo" href="index.html">
-            <span class="logo-icon">🎾</span>
-            <span>Padel Community Hub</span>
+        <a
+            class="logo"
+            href="index.html"
+            aria-label="Padel Community Hub home"
+        >
+
+            <span
+                class="logo-icon"
+                aria-hidden="true"
+            >
+                🎾
+            </span>
+
+            <span>
+                Padel Community Hub
+            </span>
+
         </a>
 
 
@@ -86,7 +131,7 @@
 
                 <li>
                     <a href="tournaments.html">
-                        Tournaments & Players
+                        Tournaments &amp; Players
                     </a>
                 </li>
 
@@ -96,7 +141,7 @@
                         href="clubs.html"
                         aria-current="page"
                     >
-                        Clubs & Equipment
+                        Clubs &amp; Equipment
                     </a>
                 </li>
 
@@ -121,7 +166,9 @@
                 DISCOVER
             </p>
 
-            <h1>Clubs & Equipment</h1>
+            <h1>
+                Clubs &amp; Equipment
+            </h1>
 
             <p>
                 Find local padel clubs and discover equipment
@@ -139,7 +186,9 @@
 
         <div class="section-heading">
 
-            <h2>Padel Clubs</h2>
+            <h2>
+                Padel Clubs
+            </h2>
 
             <p>
                 Discover clubs where you can play, train,
@@ -152,9 +201,12 @@
         <div
             id="club-list"
             class="card-grid"
+            aria-live="polite"
         >
 
-            <!-- JavaScript will generate club cards -->
+            <p>
+                Loading clubs...
+            </p>
 
         </div>
 
@@ -171,7 +223,9 @@
                 GEAR
             </p>
 
-            <h2>Equipment Recommendations</h2>
+            <h2>
+                Equipment Recommendations
+            </h2>
 
             <p>
                 Learn about equipment that can help improve
@@ -184,22 +238,27 @@
         <div
             id="equipment-list"
             class="equipment-grid"
+            aria-live="polite"
         >
 
-            <!-- JavaScript will generate equipment -->
+            <p>
+                Loading equipment...
+            </p>
 
         </div>
 
     </section>
 
 
-    <!-- Equipment form -->
+    <!-- Community form -->
 
     <section class="contact-section">
 
         <div class="section-heading">
 
-            <h2>Ask the Community</h2>
+            <h2>
+                Ask the Community
+            </h2>
 
             <p>
                 Have a question about clubs or equipment?
@@ -261,7 +320,11 @@
                     required
                 >
 
-                    <option value="">
+                    <option
+                        value=""
+                        selected
+                        disabled
+                    >
                         Select a topic
                     </option>
 
@@ -322,7 +385,9 @@
 
         <div class="footer-about">
 
-            <h2>Padel Community Hub</h2>
+            <h2>
+                Padel Community Hub
+            </h2>
 
             <p>
                 A community website for padel players and enthusiasts.
@@ -333,19 +398,34 @@
 
         <div class="footer-links">
 
-            <h2>Quick Links</h2>
+            <h2>
+                Quick Links
+            </h2>
 
-            <a href="index.html">Home</a>
-            <a href="tournaments.html">Tournaments & Players</a>
-            <a href="clubs.html">Clubs & Equipment</a>
-            <a href="attributions.html">Attributions</a>
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="tournaments.html">
+                Tournaments &amp; Players
+            </a>
+
+            <a href="clubs.html">
+                Clubs &amp; Equipment
+            </a>
+
+            <a href="attributions.html">
+                Attributions
+            </a>
 
         </div>
 
 
         <div class="footer-project">
 
-            <h2>WDD231 Project</h2>
+            <h2>
+                WDD231 Project
+            </h2>
 
             <p>
                 Created for the WDD231 Individual Website Project.
@@ -367,7 +447,8 @@
     <div class="footer-bottom">
 
         <p>
-            &copy; <span id="current-year"></span>
+            &copy;
+            <span id="current-year"></span>
             Padel Community Hub
         </p>
 
@@ -375,11 +456,15 @@
             Matias de la Rosa | Argentina
         </p>
 
-        <p id="last-modified"></p>
+        <p id="last-modified">
+            Last Modified:
+        </p>
 
     </div>
 
 </footer>
+```
 
 </body>
+
 </html>

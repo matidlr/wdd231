@@ -1,46 +1,78 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Join Padel Community Hub | Home</title>
+```
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
 
-    <meta
-        name="description"
-        content="Padel Community Hub is a community website featuring padel tournaments, clubs, player rankings, news, tips, and equipment recommendations."
-    >
+<title>Padel Community Hub | Tournaments, Clubs and Players</title>
 
-    <meta name="author" content="Matias de la Rosa">
+<meta
+    name="description"
+    content="Discover padel tournaments, local clubs, player rankings, beginner tips, news, and equipment recommendations with Padel Community Hub."
+>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Padel Community Hub">
-    <meta
-        property="og:description"
-        content="Discover padel tournaments, clubs, players, news, tips, and equipment."
-    >
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="images/andy.webp">
-    <meta property="og:url" content="https://matidlr.github.io/wdd231/final/">
+<meta name="author" content="Matias de la Rosa">
 
-    <!-- Favicon -->
-    <link rel="icon" href="images/padel.avif">
+<!-- Open Graph metadata -->
+<meta
+    property="og:title"
+    content="Padel Community Hub | Padel Community"
+>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/base.css">
+<meta
+    property="og:description"
+    content="Discover padel tournaments, local clubs, player rankings, news, tips, and equipment recommendations."
+>
 
-    <!-- JavaScript -->
-    <script type="module" src="scripts/main.js"></script>
+<meta
+    property="og:type"
+    content="website"
+>
+
+<meta
+    property="og:image"
+    content="https://matidlr.github.io/wdd231/final/images/andy.webp"
+>
+
+<meta
+    property="og:url"
+    content="https://matidlr.github.io/wdd231/final/"
+>
+
+<!-- Favicon -->
+<link
+    rel="icon"
+    href="images/padel.avif"
+    type="image/avif"
+>
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles/base.css">
+
+<!-- JavaScript -->
+<script
+    type="module"
+    src="scripts/main.js"
+></script>
+```
+
 </head>
 
 <body>
 
+```
 <header class="site-header">
 
     <div class="header-container">
 
-        <a class="logo" href="index.html">
-            <span class="logo-icon">🎾</span>
+        <a class="logo" href="index.html" aria-label="Padel Community Hub home">
+            <span class="logo-icon" aria-hidden="true">🎾</span>
             <span>Padel Community Hub</span>
         </a>
 
@@ -55,16 +87,32 @@
             ☰
         </button>
 
-        <nav id="primary-navigation" class="navigation" aria-label="Main navigation">
+        <nav
+            id="primary-navigation"
+            class="navigation"
+            aria-label="Main navigation"
+        >
             <ul>
                 <li>
-                    <a class="active" href="index.html">Home</a>
+                    <a
+                        class="active"
+                        href="index.html"
+                        aria-current="page"
+                    >
+                        Home
+                    </a>
                 </li>
+
                 <li>
-                    <a href="tournaments.html">Tournaments & Players</a>
+                    <a href="tournaments.html">
+                        Tournaments &amp; Players
+                    </a>
                 </li>
+
                 <li>
-                    <a href="clubs.html">Clubs & Equipment</a>
+                    <a href="clubs.html">
+                        Clubs &amp; Equipment
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -77,14 +125,17 @@
 <main>
 
     <!-- Hero -->
-
     <section class="hero">
 
         <div class="hero-content">
 
-            <p class="hero-label">WELCOME TO THE COMMUNITY</p>
+            <p class="hero-label">
+                WELCOME TO THE COMMUNITY
+            </p>
 
-            <h1>Everything You Need to Enjoy Padel</h1>
+            <h1>
+                Everything You Need to Enjoy Padel
+            </h1>
 
             <p>
                 Discover tournaments, local clubs, player rankings,
@@ -93,37 +144,52 @@
             </p>
 
             <div class="hero-actions">
-                <a class="button" href="tournaments.html">
+
+                <a
+                    class="button"
+                    href="tournaments.html"
+                >
                     Explore Tournaments
                 </a>
 
-                <a class="button button-secondary" href="clubs.html">
+                <a
+                    class="button button-secondary"
+                    href="clubs.html"
+                >
                     Find Clubs
                 </a>
+
             </div>
 
         </div>
 
         <div class="hero-image">
+
             <img
                 src="images/andy.webp"
                 alt="Two players playing padel on a court"
                 width="800"
                 height="600"
+                fetchpriority="high"
             >
+
         </div>
 
     </section>
 
 
     <!-- Introduction -->
-
     <section class="intro">
 
         <div class="section-heading">
-            <p class="section-label">PADEL COMMUNITY</p>
 
-            <h2>Connect. Play. Improve.</h2>
+            <p class="section-label">
+                PADEL COMMUNITY
+            </p>
+
+            <h2>
+                Connect. Play. Improve.
+            </h2>
 
             <p>
                 Padel Community Hub brings together useful information
@@ -131,18 +197,20 @@
                 first match or competing regularly, you can find
                 something useful here.
             </p>
+
         </div>
 
     </section>
 
 
     <!-- Featured tournaments -->
-
     <section class="featured">
 
         <div class="section-heading">
 
-            <h2>Featured Tournaments</h2>
+            <h2>
+                Featured Tournaments
+            </h2>
 
             <p>
                 Discover some of the upcoming tournaments available
@@ -151,30 +219,42 @@
 
         </div>
 
-        <div id="featured-tournaments" class="card-grid">
-
-            <!-- JavaScript will generate tournament cards here -->
-
+        <div
+            id="featured-tournaments"
+            class="card-grid"
+            aria-live="polite"
+        >
+            <p>
+                Loading tournaments...
+            </p>
         </div>
 
         <div class="section-action">
-            <a class="button" href="tournaments.html">
+
+            <a
+                class="button"
+                href="tournaments.html"
+            >
                 View All Tournaments
             </a>
+
         </div>
 
     </section>
 
 
     <!-- Beginner tips -->
-
     <section class="tips">
 
         <div class="section-heading">
 
-            <p class="section-label">GET STARTED</p>
+            <p class="section-label">
+                GET STARTED
+            </p>
 
-            <h2>Padel Tips for Beginners</h2>
+            <h2>
+                Padel Tips for Beginners
+            </h2>
 
         </div>
 
@@ -182,9 +262,16 @@
 
             <article class="tip-card">
 
-                <div class="tip-icon">🎾</div>
+                <div
+                    class="tip-icon"
+                    aria-hidden="true"
+                >
+                    🎾
+                </div>
 
-                <h3>Learn the Basics</h3>
+                <h3>
+                    Learn the Basics
+                </h3>
 
                 <p>
                     Start by learning the basic rules, scoring system,
@@ -196,9 +283,16 @@
 
             <article class="tip-card">
 
-                <div class="tip-icon">👟</div>
+                <div
+                    class="tip-icon"
+                    aria-hidden="true"
+                >
+                    👟
+                </div>
 
-                <h3>Use the Right Equipment</h3>
+                <h3>
+                    Use the Right Equipment
+                </h3>
 
                 <p>
                     Choosing a suitable racket and proper padel shoes
@@ -210,9 +304,16 @@
 
             <article class="tip-card">
 
-                <div class="tip-icon">🤝</div>
+                <div
+                    class="tip-icon"
+                    aria-hidden="true"
+                >
+                    🤝
+                </div>
 
-                <h3>Play With Others</h3>
+                <h3>
+                    Play With Others
+                </h3>
 
                 <p>
                     Playing regularly with different partners is one
@@ -227,12 +328,13 @@
 
 
     <!-- Latest news -->
-
     <section class="news">
 
         <div class="section-heading">
 
-            <h2>Latest Padel News</h2>
+            <h2>
+                Latest Padel News
+            </h2>
 
             <p>
                 Stay informed about what's happening in the world
@@ -241,25 +343,67 @@
 
         </div>
 
-        <div id="latest-news" class="news-grid">
+        <div
+            id="latest-news"
+            class="news-grid"
+            aria-live="polite"
+        >
+            <article class="news-card">
 
-            <!-- JavaScript will generate news -->
+                <h3>
+                    Padel Continues to Grow
+                </h3>
+
+                <p>
+                    Padel continues to attract new players and communities
+                    around Argentina and the world.
+                </p>
+
+            </article>
+
+            <article class="news-card">
+
+                <h3>
+                    Prepare for Your Next Tournament
+                </h3>
+
+                <p>
+                    Training consistently and choosing the right equipment
+                    can help players prepare for competition.
+                </p>
+
+            </article>
+
+            <article class="news-card">
+
+                <h3>
+                    Find Players at Your Level
+                </h3>
+
+                <p>
+                    Playing with people at a similar level can make matches
+                    more competitive and help you improve.
+                </p>
+
+            </article>
 
         </div>
 
     </section>
 
-
 </main>
 
 
+<!-- Footer -->
 <footer class="site-footer">
 
     <div class="footer-container">
 
         <div class="footer-about">
 
-            <h2>Padel Community Hub</h2>
+            <h2>
+                Padel Community Hub
+            </h2>
 
             <p>
                 A community website for padel players and enthusiasts.
@@ -267,20 +411,37 @@
 
         </div>
 
+
         <div class="footer-links">
 
-            <h2>Quick Links</h2>
+            <h2>
+                Quick Links
+            </h2>
 
-            <a href="index.html">Home</a>
-            <a href="tournaments.html">Tournaments & Players</a>
-            <a href="clubs.html">Clubs & Equipment</a>
-            <a href="attributions.html">Attributions</a>
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="tournaments.html">
+                Tournaments &amp; Players
+            </a>
+
+            <a href="clubs.html">
+                Clubs &amp; Equipment
+            </a>
+
+            <a href="attributions.html">
+                Attributions
+            </a>
 
         </div>
 
+
         <div class="footer-project">
 
-            <h2>WDD231 Project</h2>
+            <h2>
+                WDD231 Project
+            </h2>
 
             <p>
                 Created for the WDD231 Individual Website Project.
@@ -298,10 +459,12 @@
 
     </div>
 
+
     <div class="footer-bottom">
 
         <p>
-            &copy; <span id="current-year"></span>
+            &copy;
+            <span id="current-year"></span>
             Padel Community Hub
         </p>
 
@@ -309,11 +472,14 @@
             Matias de la Rosa | Argentina
         </p>
 
-        <p id="last-modified"></p>
+        <p id="last-modified">
+            Last Modified:
+        </p>
 
     </div>
 
 </footer>
+```
 
 </body>
 </html>
