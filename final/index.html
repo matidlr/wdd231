@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
 
 ```
+<meta charset="UTF-8">
+
 <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
@@ -17,12 +19,15 @@
     content="Discover padel tournaments, local clubs, player rankings, beginner tips, news, and equipment recommendations with Padel Community Hub."
 >
 
-<meta name="author" content="Matias de la Rosa">
+<meta
+    name="author"
+    content="Matias de la Rosa"
+>
 
-<!-- Open Graph metadata -->
+<!-- Open Graph -->
 <meta
     property="og:title"
-    content="Padel Community Hub | Padel Community"
+    content="Padel Community Hub | Tournaments, Clubs and Players"
 >
 
 <meta
@@ -45,20 +50,21 @@
     content="https://matidlr.github.io/wdd231/final/"
 >
 
-<!-- Favicon -->
 <link
     rel="icon"
     href="images/padel.avif"
     type="image/avif"
 >
 
-<!-- CSS -->
-<link rel="stylesheet" href="styles/base.css">
+<link
+    rel="stylesheet"
+    href="styles/base.css"
+>
 
-<!-- JavaScript -->
 <script
     type="module"
     src="scripts/main.js"
+    defer
 ></script>
 ```
 
@@ -71,9 +77,19 @@
 
     <div class="header-container">
 
-        <a class="logo" href="index.html" aria-label="Padel Community Hub home">
-            <span class="logo-icon" aria-hidden="true">🎾</span>
-            <span>Padel Community Hub</span>
+        <a
+            class="logo"
+            href="index.html"
+            aria-label="Padel Community Hub home"
+        >
+            <span
+                class="logo-icon"
+                aria-hidden="true"
+            >🎾</span>
+
+            <span>
+                Padel Community Hub
+            </span>
         </a>
 
         <button
@@ -92,7 +108,9 @@
             class="navigation"
             aria-label="Main navigation"
         >
+
             <ul>
+
                 <li>
                     <a
                         class="active"
@@ -114,7 +132,9 @@
                         Clubs &amp; Equipment
                     </a>
                 </li>
+
             </ul>
+
         </nav>
 
     </div>
@@ -125,7 +145,10 @@
 <main>
 
     <!-- Hero -->
-    <section class="hero">
+    <section
+        class="hero"
+        aria-labelledby="hero-title"
+    >
 
         <div class="hero-content">
 
@@ -133,7 +156,7 @@
                 WELCOME TO THE COMMUNITY
             </p>
 
-            <h1>
+            <h1 id="hero-title">
                 Everything You Need to Enjoy Padel
             </h1>
 
@@ -179,7 +202,10 @@
 
 
     <!-- Introduction -->
-    <section class="intro">
+    <section
+        class="intro"
+        aria-labelledby="intro-title"
+    >
 
         <div class="section-heading">
 
@@ -187,7 +213,7 @@
                 PADEL COMMUNITY
             </p>
 
-            <h2>
+            <h2 id="intro-title">
                 Connect. Play. Improve.
             </h2>
 
@@ -204,11 +230,14 @@
 
 
     <!-- Featured tournaments -->
-    <section class="featured">
+    <section
+        class="featured"
+        aria-labelledby="featured-title"
+    >
 
         <div class="section-heading">
 
-            <h2>
+            <h2 id="featured-title">
                 Featured Tournaments
             </h2>
 
@@ -223,6 +252,7 @@
             id="featured-tournaments"
             class="card-grid"
             aria-live="polite"
+            aria-busy="true"
         >
             <p>
                 Loading tournaments...
@@ -244,7 +274,10 @@
 
 
     <!-- Beginner tips -->
-    <section class="tips">
+    <section
+        class="tips"
+        aria-labelledby="tips-title"
+    >
 
         <div class="section-heading">
 
@@ -252,7 +285,7 @@
                 GET STARTED
             </p>
 
-            <h2>
+            <h2 id="tips-title">
                 Padel Tips for Beginners
             </h2>
 
@@ -328,11 +361,14 @@
 
 
     <!-- Latest news -->
-    <section class="news">
+    <section
+        class="news"
+        aria-labelledby="news-title"
+    >
 
         <div class="section-heading">
 
-            <h2>
+            <h2 id="news-title">
                 Latest Padel News
             </h2>
 
@@ -347,7 +383,9 @@
             id="latest-news"
             class="news-grid"
             aria-live="polite"
+            aria-busy="false"
         >
+
             <article class="news-card">
 
                 <h3>
@@ -394,7 +432,6 @@
 </main>
 
 
-<!-- Footer -->
 <footer class="site-footer">
 
     <div class="footer-container">
@@ -482,4 +519,5 @@
 ```
 
 </body>
+
 </html>
