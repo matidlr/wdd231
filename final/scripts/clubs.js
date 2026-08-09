@@ -1,127 +1,115 @@
 // Padel Community Hub
-// Clubs and Equipment JavaScript
+// Clubs page JavaScript
 
 import "./main.js";
 
-// Cache DOM elements
+// Select the containers used to display clubs and equipment.
 const clubList = document.querySelector("#club-list");
 const equipmentList = document.querySelector("#equipment-list");
 
-// Utility: Prevent XSS by escaping dynamic user/data strings inserted into HTML
-function sanitizeHTML(str) {
-    if (str == null) return "";
-    return String(str)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-}
-
-// Utility: Format prices in Argentine pesos using a cached Formatter instance
-const currencyFormatter = new Intl.NumberFormat("es-AR", {
-    style: "currency",
-    currency: "ARS",
-    maximumFractionDigits: 0,
-});
-
-function formatPrice(price) {
-    return currencyFormatter.format(price);
-}
-
-// Generic Fetcher to eliminate repetitive try/catch logic
-async function fetchData(url) {
-    const response = await fetch(url);
-    if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    return await response.json();
-}
-
-// Generic Error Renderer
-function renderError(container, message) {
-    if (!container) return;
-    container.innerHTML = `
-        <p class="error-message">
-            ${sanitizeHTML(message)}
-        </p>
-    `;
-}
-
-// Template Generators
-function createClubCard(club) {
-    return `
-        <article class="club-card">
-            <img
-                src="${sanitizeHTML(club.image)}"
-                alt="${sanitizeHTML(club.name)}"
-                loading="lazy"
-            >
-            <h3>${sanitizeHTML(club.name)}</h3>
-            <p>${sanitizeHTML(club.description)}</p>
-            <p><strong>Location:</strong> ${sanitizeHTML(club.location)}</p>
-            <p><strong>Courts:</strong> ${sanitizeHTML(club.courts)}</p>
-            <p><strong>Phone:</strong> ${sanitizeHTML(club.phone)}</p>
-        </article>
-    `;
-}
-
-function createEquipmentCard(item) {
-    return `
-        <article class="equipment-card">
-            <img
-                src="${sanitizeHTML(item.image)}"
-                alt="${sanitizeHTML(item.name)}"
-                loading="lazy"
-            >
-            <h3>${sanitizeHTML(item.name)}</h3>
-            <p>${sanitizeHTML(item.description)}</p>
-            <p><strong>Type:</strong> ${sanitizeHTML(item.type)}</p>
-            <p><strong>Brand:</strong> ${sanitizeHTML(item.brand)}</p>
-            <p><strong>Level:</strong> ${sanitizeHTML(item.level)}</p>
-            <p><strong>Price:</strong> ${formatPrice(item.price)}</p>
-        </article>
-    `;
-}
-
-// Display Functions
-function renderList(container, items, templateFn) {
-    if (!container || !Array.isArray(items)) return;
-    container.innerHTML = items.map(templateFn).join("");
-}
-
-// Controller Loaders
+// Load club data from the JSON file.
 async function loadClubs() {
-    if (!clubList) return; // Prevent network call if container isn't present
     try {
-        const clubs = await fetchData("data/clubs.json");
-        renderList(clubList, clubs, createClubCard);
+        const response = await fetch("data/clubs.json");
+
+        if (!response.ok) {
+            throw new Error("Unable to load clubs.json");
+        }
+
+        const clubs = await response.json();
+
+        displayClubs(clubs);
     } catch (error) {
         console.error("Error loading clubs:", error);
-        renderError(clubList, "The clubs could not be loaded.");
+
+        if (clubList) {
+            clubList.innerHTML = "<p>Unable to load clubs.</p>";
+        }
     }
 }
 
+// Display the club data on the page.
+function displayClubs(clubs) {
+    if (!clubList) {
+        return;
+    }
+
+    clubList.innerHTML = "";
+
+    clubs.forEach((club) => {
+        const article = document.createElement("article");
+
+        article.className = "club-card";
+
+        article.innerHTML = `
+            <img
+                src="${club.image}"
+                alt="${club.name}"
+                loading="lazy"
+            >
+            <h3>${club.name}</h3>
+            <p>${club.description}</p>
+            <p><strong>Location:</strong> ${club.location}</p>
+            <p><strong>Courts:</strong> ${club.courts}</p>
+            <p><strong>Phone:</strong> ${club.phone}</p>
+        `;
+
+        clubList.appendChild(article);
+    });
+}
+
+// Load equipment data from the JSON file.
 async function loadEquipment() {
-    if (!equipmentList) return; // Prevent network call if container isn't present
     try {
-        const equipment = await fetchData("data/equipment.json");
-        renderList(equipmentList, equipment, createEquipmentCard);
+        const response = await fetch("data/equipment.json");
+
+        if (!response.ok) {
+            throw new Error("Unable to load equipment.json");
+        }
+
+        const equipment = await response.json();
+
+        displayEquipment(equipment);
     } catch (error) {
         console.error("Error loading equipment:", error);
-        renderError(equipmentList, "The equipment could not be loaded.");
+
+        if (equipmentList) {
+            equipmentList.innerHTML = "<p>Unable to load equipment.</p>";
+        }
     }
 }
 
-// Initialize Application
-function init() {
-    // Run requests concurrently instead of blocking sequentially
-    Promise.allSettled([loadClubs(), loadEquipment()]);
+// Display the equipment data on the page.
+function displayEquipment(equipment) {
+    if (!equipmentList) {
+        return;
+    }
+
+    equipmentList.innerHTML = "";
+
+    equipment.forEach((item) => {
+        const article = document.createElement("article");
+
+        article.className = "equipment-card";
+
+        article.innerHTML = `
+            <img
+                src="${item.image}"
+                alt="${item.name}"
+                loading="lazy"
+            >
+            <h3>${item.name}</h3>
+            <p>${item.description}</p>
+            <p><strong>Type:</strong> ${item.type}</p>
+            <p><strong>Brand:</strong> ${item.brand}</p>
+            <p><strong>Level:</strong> ${item.level}</p>
+            <p><strong>Price:</strong> ${item.price}</p>
+        `;
+
+        equipmentList.appendChild(article);
+    });
 }
 
-// Ensure execution runs after DOM is ready or immediately if script is deferred/module
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-} else {
-    init();
-}
+// Start loading the page data.
+loadClubs();
+loadEquipment();
