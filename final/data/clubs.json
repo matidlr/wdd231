@@ -1,3 +1,4 @@
+
 [
     {
         "id": 1,
@@ -6,7 +7,9 @@
         "courts": 8,
         "indoor": true,
         "rating": 4.8,
-        "price": 12000
+        "price": 12000,
+        "description": "Modern padel club with eight courts, professional lighting, changing rooms, and facilities for players of all levels.",
+        "image": "images/clubs/padel-arena.webp"
     },
     {
         "id": 2,
@@ -15,7 +18,9 @@
         "courts": 6,
         "indoor": true,
         "rating": 4.7,
-        "price": 11000
+        "price": 11000,
+        "description": "Indoor padel club offering well-maintained courts, comfortable facilities, and regular matches for recreational players.",
+        "image": "images/clubs/cordoba-padel-club.webp"
     },
     {
         "id": 3,
@@ -24,7 +29,9 @@
         "courts": 5,
         "indoor": false,
         "rating": 4.6,
-        "price": 10000
+        "price": 10000,
+        "description": "Outdoor padel center with five courts and a relaxed atmosphere, ideal for casual games and weekend matches.",
+        "image": "images/clubs/padel-center.webp"
     },
     {
         "id": 4,
@@ -33,7 +40,9 @@
         "courts": 7,
         "indoor": true,
         "rating": 4.9,
-        "price": 13000
+        "price": 13000,
+        "description": "Highly rated indoor club in Villa Allende with seven courts, modern facilities, and a strong local padel community.",
+        "image": "images/clubs/allende-padel.webp"
     },
     {
         "id": 5,
@@ -42,7 +51,9 @@
         "courts": 6,
         "indoor": false,
         "rating": 4.7,
-        "price": 11500
+        "price": 11500,
+        "description": "Outdoor padel club surrounded by the Sierras area, offering six courts and a friendly environment for players.",
+        "image": "images/clubs/sierras-padel.webp"
     },
     {
         "id": 6,
@@ -51,7 +62,9 @@
         "courts": 5,
         "indoor": true,
         "rating": 4.5,
-        "price": 9500
+        "price": 9500,
+        "description": "Indoor padel facility with five courts and affordable court fees for beginners and experienced players.",
+        "image": "images/clubs/alta-gracia-padel.webp"
     },
     {
         "id": 7,
@@ -60,7 +73,9 @@
         "courts": 4,
         "indoor": false,
         "rating": 4.4,
-        "price": 9000
+        "price": 9000,
+        "description": "A smaller outdoor club in Córdoba offering four courts and an accessible option for local players.",
+        "image": "images/clubs/padel-club-norte.webp"
     },
     {
         "id": 8,
@@ -69,6 +84,8 @@
         "courts": 6,
         "indoor": true,
         "rating": 4.6,
-        "price": 10500
+        "price": 10500,
+        "description": "Indoor padel club with six courts, convenient facilities, and a welcoming atmosphere for players of different skill levels.",
+        "image": "images/clubs/zona-padel.webp"
     }
 ]

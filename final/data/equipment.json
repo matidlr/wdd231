@@ -6,7 +6,9 @@
         "level": "Beginner",
         "weight": "360 g",
         "shape": "Round",
-        "price": 95000
+        "price": 95000,
+        "description": "A lightweight round-shaped racket designed to provide excellent control and stability for beginners.",
+        "image": "images/equipment/control-pro-2026.webp"
     },
     {
         "id": 2,
@@ -15,7 +17,9 @@
         "level": "Advanced",
         "weight": "375 g",
         "shape": "Diamond",
-        "price": 180000
+        "price": 180000,
+        "description": "A powerful diamond-shaped racket designed for advanced players who want maximum attacking performance.",
+        "image": "images/equipment/power-strike-x.webp"
     },
     {
         "id": 3,
@@ -24,25 +28,31 @@
         "level": "Intermediate",
         "weight": "365 g",
         "shape": "Teardrop",
-        "price": 135000
+        "price": 135000,
+        "description": "A versatile teardrop-shaped racket that provides a balanced combination of power and control.",
+        "image": "images/equipment/balance-elite.webp"
     },
     {
         "id": 4,
-        "name": "Court Runner",
+        "name": "bullpadel shoes",
         "type": "Shoes",
         "level": "All Levels",
         "weight": "340 g",
         "surface": "Clay",
-        "price": 85000
+        "price": 85000,
+        "description": "Lightweight padel shoes designed to provide grip, stability, and comfort on clay courts.",
+        "image": "images/equipment/bullpadel.webp"
     },
     {
         "id": 5,
-        "name": "Padel Pro Court",
+        "name": "Asics",
         "type": "Shoes",
         "level": "Intermediate",
         "weight": "350 g",
         "surface": "All Court",
-        "price": 110000
+        "price": 110000,
+        "description": "Durable all-court shoes offering reliable traction and support during intense matches.",
+        "image": "images/equipment/asics.webp"
     },
     {
         "id": 6,
@@ -51,7 +61,9 @@
         "level": "All Levels",
         "quantity": "3 balls",
         "speed": "Medium",
-        "price": 12000
+        "price": 12000,
+        "description": "A three-ball pack designed for consistent performance during training sessions and recreational matches.",
+        "image": "images/equipment/match-ball-pro.webp"
     },
     {
         "id": 7,
@@ -60,7 +72,9 @@
         "level": "Advanced",
         "quantity": "3 balls",
         "speed": "Fast",
-        "price": 15000
+        "price": 15000,
+        "description": "Fast padel balls designed for competitive players who prefer a quicker pace of play.",
+        "image": "images/equipment/competition-balls.webp"
     },
     {
         "id": 8,
@@ -69,7 +83,9 @@
         "level": "All Levels",
         "quantity": "3 grips",
         "material": "Synthetic",
-        "price": 6000
+        "price": 6000,
+        "description": "Comfortable synthetic overgrips designed to improve racket control and absorb moisture during play.",
+        "image": "images/equipment/pro-overgrip.webp"
     },
     {
         "id": 9,
@@ -78,7 +94,9 @@
         "level": "All Levels",
         "capacity": "30 L",
         "compartments": 4,
-        "price": 65000
+        "price": 65000,
+        "description": "A practical 30-liter padel backpack with four compartments for rackets, clothing, shoes, and accessories.",
+        "image": "images/equipment/performance-backpack.webp"
     },
     {
         "id": 10,
@@ -87,6 +105,8 @@
         "level": "Advanced",
         "capacity": "45 L",
         "compartments": 6,
-        "price": 95000
+        "price": 95000,
+        "description": "A spacious 45-liter padel bag with six compartments designed for players who carry extensive equipment.",
+        "image": "images/equipment/premium-padel-bag.webp"
     }
 ]
