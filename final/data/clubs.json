@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Padel Arena",
+        "city": "Córdoba",
+        "courts": 8,
+        "indoor": true,
+        "rating": 4.8,
+        "price": 12000
+    },
+    {
+        "id": 2,
+        "name": "Córdoba Padel Club",
+        "city": "Córdoba",
+        "courts": 6,
+        "indoor": true,
+        "rating": 4.7,
+        "price": 11000
+    },
+    {
+        "id": 3,
+        "name": "Padel Center",
+        "city": "Córdoba",
+        "courts": 5,
+        "indoor": false,
+        "rating": 4.6,
+        "price": 10000
+    },
+    {
+        "id": 4,
+        "name": "Allende Padel",
+        "city": "Villa Allende",
+        "courts": 7,
+        "indoor": true,
+        "rating": 4.9,
+        "price": 13000
+    },
+    {
+        "id": 5,
+        "name": "Sierras Padel",
+        "city": "Villa Allende",
+        "courts": 6,
+        "indoor": false,
+        "rating": 4.7,
+        "price": 11500
+    },
+    {
+        "id": 6,
+        "name": "Alta Gracia Padel",
+        "city": "Alta Gracia",
+        "courts": 5,
+        "indoor": true,
+        "rating": 4.5,
+        "price": 9500
+    },
+    {
+        "id": 7,
+        "name": "Padel Club Norte",
+        "city": "Córdoba",
+        "courts": 4,
+        "indoor": false,
+        "rating": 4.4,
+        "price": 9000
+    },
+    {
+        "id": 8,
+        "name": "Zona Padel",
+        "city": "Córdoba",
+        "courts": 6,
+        "indoor": true,
+        "rating": 4.6,
+        "price": 10500
+    }
+]

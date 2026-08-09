@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Padel Community Hub | Home</title>
+
+    <meta
+        name="description"
+        content="Padel Community Hub is a community website featuring padel tournaments, clubs, player rankings, news, tips, and equipment recommendations."
+    >
+
+    <meta name="author" content="Matias de la Rosa">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Padel Community Hub">
+    <meta
+        property="og:description"
+        content="Discover padel tournaments, clubs, players, news, tips, and equipment."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/padel-community.webp">
+    <meta property="og:url" content="https://matidlr.github.io/wdd231/finalproject/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/padel.avif">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a class="logo" href="index.html">
+            <span class="logo-icon">🎾</span>
+            <span>Padel Community Hub</span>
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
+            ☰
+        </button>
+
+        <nav id="primary-navigation" class="navigation" aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="tournaments.html">Tournaments & Players</a>
+                </li>
+                <li>
+                    <a href="clubs.html">Clubs & Equipment</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-label">WELCOME TO THE COMMUNITY</p>
+
+            <h1>Everything You Need to Enjoy Padel</h1>
+
+            <p>
+                Discover tournaments, local clubs, player rankings,
+                useful tips, padel news, and equipment recommendations
+                all in one place.
+            </p>
+
+            <div class="hero-actions">
+                <a class="button" href="tournaments.html">
+                    Explore Tournaments
+                </a>
+
+                <a class="button button-secondary" href="clubs.html">
+                    Find Clubs
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="images/padel-hero.webp"
+                alt="Two players playing padel on a court"
+                width="800"
+                height="600"
+            >
+        </div>
+
+    </section>
+
+
+    <!-- Introduction -->
+
+    <section class="intro">
+
+        <div class="section-heading">
+            <p class="section-label">PADEL COMMUNITY</p>
+
+            <h2>Connect. Play. Improve.</h2>
+
+            <p>
+                Padel Community Hub brings together useful information
+                for players of all levels. Whether you are playing your
+                first match or competing regularly, you can find
+                something useful here.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Featured tournaments -->
+
+    <section class="featured">
+
+        <div class="section-heading">
+
+            <h2>Featured Tournaments</h2>
+
+            <p>
+                Discover some of the upcoming tournaments available
+                to padel players.
+            </p>
+
+        </div>
+
+        <div id="featured-tournaments" class="card-grid">
+
+            <!-- JavaScript will generate tournament cards here -->
+
+        </div>
+
+        <div class="section-action">
+            <a class="button" href="tournaments.html">
+                View All Tournaments
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Beginner tips -->
+
+    <section class="tips">
+
+        <div class="section-heading">
+
+            <p class="section-label">GET STARTED</p>
+
+            <h2>Padel Tips for Beginners</h2>
+
+        </div>
+
+        <div class="tips-grid">
+
+            <article class="tip-card">
+
+                <div class="tip-icon">🎾</div>
+
+                <h3>Learn the Basics</h3>
+
+                <p>
+                    Start by learning the basic rules, scoring system,
+                    and fundamental shots of padel.
+                </p>
+
+            </article>
+
+
+            <article class="tip-card">
+
+                <div class="tip-icon">👟</div>
+
+                <h3>Use the Right Equipment</h3>
+
+                <p>
+                    Choosing a suitable racket and proper padel shoes
+                    can make learning the game much easier.
+                </p>
+
+            </article>
+
+
+            <article class="tip-card">
+
+                <div class="tip-icon">🤝</div>
+
+                <h3>Play With Others</h3>
+
+                <p>
+                    Playing regularly with different partners is one
+                    of the best ways to improve your game.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Latest news -->
+
+    <section class="news">
+
+        <div class="section-heading">
+
+            <h2>Latest Padel News</h2>
+
+            <p>
+                Stay informed about what's happening in the world
+                of padel.
+            </p>
+
+        </div>
+
+        <div id="latest-news" class="news-grid">
+
+            <!-- JavaScript will generate news -->
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <h2>Padel Community Hub</h2>
+
+            <p>
+                A community website for padel players and enthusiasts.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h2>Quick Links</h2>
+
+            <a href="index.html">Home</a>
+            <a href="tournaments.html">Tournaments & Players</a>
+            <a href="clubs.html">Clubs & Equipment</a>
+            <a href="attributions.html">Attributions</a>
+
+        </div>
+
+        <div class="footer-project">
+
+            <h2>WDD231 Project</h2>
+
+            <p>
+                Created for the WDD231 Individual Website Project.
+            </p>
+
+            <a
+                href="https://www.youtube.com/watch?v=-oLltCwtMMo"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Project Demonstration Video
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; <span id="current-year"></span>
+            Padel Community Hub
+        </p>
+
+        <p>
+            Matias de la Rosa | Argentina
+        </p>
+
+        <p id="last-modified"></p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

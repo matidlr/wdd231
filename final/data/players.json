@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Lucas Fernández",
+        "city": "Córdoba",
+        "category": "Advanced",
+        "ranking": 1,
+        "points": 1850,
+        "wins": 28
+    },
+    {
+        "id": 2,
+        "name": "Martín González",
+        "city": "Córdoba",
+        "category": "Advanced",
+        "ranking": 2,
+        "points": 1720,
+        "wins": 25
+    },
+    {
+        "id": 3,
+        "name": "Santiago Romero",
+        "city": "Villa Allende",
+        "category": "Advanced",
+        "ranking": 3,
+        "points": 1640,
+        "wins": 23
+    },
+    {
+        "id": 4,
+        "name": "Nicolás Pérez",
+        "city": "Córdoba",
+        "category": "Advanced",
+        "ranking": 4,
+        "points": 1580,
+        "wins": 21
+    },
+    {
+        "id": 5,
+        "name": "Federico López",
+        "city": "Alta Gracia",
+        "category": "Intermediate",
+        "ranking": 5,
+        "points": 1490,
+        "wins": 20
+    },
+    {
+        "id": 6,
+        "name": "Diego Martínez",
+        "city": "Córdoba",
+        "category": "Intermediate",
+        "ranking": 6,
+        "points": 1420,
+        "wins": 18
+    },
+    {
+        "id": 7,
+        "name": "Julián Torres",
+        "city": "Villa Allende",
+        "category": "Intermediate",
+        "ranking": 7,
+        "points": 1350,
+        "wins": 17
+    },
+    {
+        "id": 8,
+        "name": "Tomás Castro",
+        "city": "Córdoba",
+        "category": "Intermediate",
+        "ranking": 8,
+        "points": 1290,
+        "wins": 16
+    },
+    {
+        "id": 9,
+        "name": "Agustín Silva",
+        "city": "Córdoba",
+        "category": "Beginner",
+        "ranking": 9,
+        "points": 1180,
+        "wins": 14
+    },
+    {
+        "id": 10,
+        "name": "Franco Molina",
+        "city": "Alta Gracia",
+        "category": "Beginner",
+        "ranking": 10,
+        "points": 1100,
+        "wins": 13
+    },
+    {
+        "id": 11,
+        "name": "Gonzalo Díaz",
+        "city": "Córdoba",
+        "category": "Beginner",
+        "ranking": 11,
+        "points": 1050,
+        "wins": 12
+    },
+    {
+        "id": 12,
+        "name": "Matías Ruiz",
+        "city": "Villa Allende",
+        "category": "Beginner",
+        "ranking": 12,
+        "points": 980,
+        "wins": 11
+    },
+    {
+        "id": 13,
+        "name": "Pablo Herrera",
+        "city": "Córdoba",
+        "category": "Intermediate",
+        "ranking": 13,
+        "points": 930,
+        "wins": 10
+    },
+    {
+        "id": 14,
+        "name": "Andrés Navarro",
+        "city": "Córdoba",
+        "category": "Intermediate",
+        "ranking": 14,
+        "points": 890,
+        "wins": 9
+    },
+    {
+        "id": 15,
+        "name": "Ramiro Acosta",
+        "city": "Alta Gracia",
+        "category": "Beginner",
+        "ranking": 15,
+        "points": 820,
+        "wins": 8
+    }
+]

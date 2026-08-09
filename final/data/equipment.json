@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Control Pro 2026",
+        "type": "Racket",
+        "level": "Beginner",
+        "weight": "360 g",
+        "shape": "Round",
+        "price": 95000
+    },
+    {
+        "id": 2,
+        "name": "Power Strike X",
+        "type": "Racket",
+        "level": "Advanced",
+        "weight": "375 g",
+        "shape": "Diamond",
+        "price": 180000
+    },
+    {
+        "id": 3,
+        "name": "Balance Elite",
+        "type": "Racket",
+        "level": "Intermediate",
+        "weight": "365 g",
+        "shape": "Teardrop",
+        "price": 135000
+    },
+    {
+        "id": 4,
+        "name": "Court Runner",
+        "type": "Shoes",
+        "level": "All Levels",
+        "weight": "340 g",
+        "surface": "Clay",
+        "price": 85000
+    },
+    {
+        "id": 5,
+        "name": "Padel Pro Court",
+        "type": "Shoes",
+        "level": "Intermediate",
+        "weight": "350 g",
+        "surface": "All Court",
+        "price": 110000
+    },
+    {
+        "id": 6,
+        "name": "Match Ball Pro",
+        "type": "Balls",
+        "level": "All Levels",
+        "quantity": "3 balls",
+        "speed": "Medium",
+        "price": 12000
+    },
+    {
+        "id": 7,
+        "name": "Competition Balls",
+        "type": "Balls",
+        "level": "Advanced",
+        "quantity": "3 balls",
+        "speed": "Fast",
+        "price": 15000
+    },
+    {
+        "id": 8,
+        "name": "Pro Overgrip",
+        "type": "Accessory",
+        "level": "All Levels",
+        "quantity": "3 grips",
+        "material": "Synthetic",
+        "price": 6000
+    },
+    {
+        "id": 9,
+        "name": "Performance Backpack",
+        "type": "Bag",
+        "level": "All Levels",
+        "capacity": "30 L",
+        "compartments": 4,
+        "price": 65000
+    },
+    {
+        "id": 10,
+        "name": "Premium Padel Bag",
+        "type": "Bag",
+        "level": "Advanced",
+        "capacity": "45 L",
+        "compartments": 6,
+        "price": 95000
+    }
+]

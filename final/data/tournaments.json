@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "name": "Córdoba Padel Open",
+        "location": "Córdoba",
+        "club": "Padel Arena",
+        "date": "2026-09-12",
+        "category": "Intermediate",
+        "players": 32,
+        "price": 15000
+    },
+    {
+        "id": 2,
+        "name": "Córdoba Summer Cup",
+        "location": "Córdoba",
+        "club": "Córdoba Padel Club",
+        "date": "2026-09-19",
+        "category": "Beginner",
+        "players": 24,
+        "price": 12000
+    },
+    {
+        "id": 3,
+        "name": "Villa Allende Challenge",
+        "location": "Villa Allende",
+        "club": "Allende Padel",
+        "date": "2026-09-26",
+        "category": "Advanced",
+        "players": 32,
+        "price": 18000
+    },
+    {
+        "id": 4,
+        "name": "Córdoba Beginner Cup",
+        "location": "Córdoba",
+        "club": "Padel Center",
+        "date": "2026-10-03",
+        "category": "Beginner",
+        "players": 16,
+        "price": 10000
+    },
+    {
+        "id": 5,
+        "name": "Alta Gracia Padel Series",
+        "location": "Alta Gracia",
+        "club": "Alta Gracia Padel",
+        "date": "2026-10-10",
+        "category": "Intermediate",
+        "players": 24,
+        "price": 14000
+    },
+    {
+        "id": 6,
+        "name": "Córdoba Masters",
+        "location": "Córdoba",
+        "club": "Padel Arena",
+        "date": "2026-10-17",
+        "category": "Advanced",
+        "players": 32,
+        "price": 20000
+    },
+    {
+        "id": 7,
+        "name": "Sierras Padel Cup",
+        "location": "Villa Allende",
+        "club": "Sierras Padel",
+        "date": "2026-10-24",
+        "category": "Intermediate",
+        "players": 24,
+        "price": 15000
+    },
+    {
+        "id": 8,
+        "name": "Córdoba Rising Stars",
+        "location": "Córdoba",
+        "club": "Padel Center",
+        "date": "2026-10-31",
+        "category": "Beginner",
+        "players": 16,
+        "price": 9000
+    },
+    {
+        "id": 9,
+        "name": "Champions Padel Challenge",
+        "location": "Córdoba",
+        "club": "Córdoba Padel Club",
+        "date": "2026-11-07",
+        "category": "Advanced",
+        "players": 32,
+        "price": 22000
+    },
+    {
+        "id": 10,
+        "name": "Alta Gracia Open",
+        "location": "Alta Gracia",
+        "club": "Alta Gracia Padel",
+        "date": "2026-11-14",
+        "category": "Intermediate",
+        "players": 24,
+        "price": 14000
+    },
+    {
+        "id": 11,
+        "name": "Córdoba Friends Cup",
+        "location": "Córdoba",
+        "club": "Padel Arena",
+        "date": "2026-11-21",
+        "category": "Beginner",
+        "players": 16,
+        "price": 10000
+    },
+    {
+        "id": 12,
+        "name": "Villa Allende Masters",
+        "location": "Villa Allende",
+        "club": "Allende Padel",
+        "date": "2026-11-28",
+        "category": "Advanced",
+        "players": 32,
+        "price": 19000
+    },
+    {
+        "id": 13,
+        "name": "Córdoba Weekend Cup",
+        "location": "Córdoba",
+        "club": "Padel Center",
+        "date": "2026-12-05",
+        "category": "Intermediate",
+        "players": 24,
+        "price": 13000
+    },
+    {
+        "id": 14,
+        "name": "Christmas Padel Cup",
+        "location": "Córdoba",
+        "club": "Córdoba Padel Club",
+        "date": "2026-12-12",
+        "category": "Beginner",
+        "players": 16,
+        "price": 10000
+    },
+    {
+        "id": 15,
+        "name": "Córdoba Elite Open",
+        "location": "Córdoba",
+        "club": "Padel Arena",
+        "date": "2026-12-19",
+        "category": "Advanced",
+        "players": 32,
+        "price": 25000
+    },
+    {
+        "id": 16,
+        "name": "New Year Padel Challenge",
+        "location": "Villa Allende",
+        "club": "Sierras Padel",
+        "date": "2027-01-09",
+        "category": "Intermediate",
+        "players": 24,
+        "price": 15000
+    },
+    {
+        "id": 17,
+        "name": "Summer Beginners Cup",
+        "location": "Córdoba",
+        "club": "Padel Center",
+        "date": "2027-01-16",
+        "category": "Beginner",
+        "players": 16,
+        "price": 9000
+    },
+    {
+        "id": 18,
+        "name": "Córdoba Pro Series",
+        "location": "Córdoba",
+        "club": "Córdoba Padel Club",
+        "date": "2027-01-23",
+        "category": "Advanced",
+        "players": 32,
+        "price": 23000
+    },
+    {
+        "id": 19,
+        "name": "Sierras Summer Open",
+        "location": "Villa Allende",
+        "club": "Allende Padel",
+        "date": "2027-01-30",
+        "category": "Intermediate",
+        "players": 24,
+        "price": 16000
+    },
+    {
+        "id": 20,
+        "name": "Córdoba Community Cup",
+        "location": "Córdoba",
+        "club": "Padel Arena",
+        "date": "2027-02-06",
+        "category": "Beginner",
+        "players": 16,
+        "price": 10000
+    }
+]

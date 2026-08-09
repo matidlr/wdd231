@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Padel Clubs & Equipment | Padel Community Hub</title>
+
+    <meta
+        name="description"
+        content="Discover local padel clubs and explore equipment recommendations including rackets, shoes, balls, and accessories."
+    >
+
+    <meta name="author" content="Matias de la Rosa">
+
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="Padel Clubs & Equipment | Padel Community Hub"
+    >
+
+    <meta
+        property="og:description"
+        content="Find padel clubs and discover recommended rackets, shoes, balls, and accessories."
+    >
+
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:image"
+        content="images/padel-club.webp"
+    >
+
+    <meta
+        property="og:url"
+        content="https://matidlr.github.io/wdd231/finalproject/clubs.html"
+    >
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="scripts/clubs.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a class="logo" href="index.html">
+            <span class="logo-icon">🎾</span>
+            <span>Padel Community Hub</span>
+        </a>
+
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
+            ☰
+        </button>
+
+
+        <nav
+            id="primary-navigation"
+            class="navigation"
+            aria-label="Main navigation"
+        >
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tournaments.html">
+                        Tournaments & Players
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        class="active"
+                        href="clubs.html"
+                        aria-current="page"
+                    >
+                        Clubs & Equipment
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- Page header -->
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="section-label">
+                DISCOVER
+            </p>
+
+            <h1>Clubs & Equipment</h1>
+
+            <p>
+                Find local padel clubs and discover equipment
+                recommendations for players of different levels.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Clubs -->
+
+    <section class="clubs-section">
+
+        <div class="section-heading">
+
+            <h2>Padel Clubs</h2>
+
+            <p>
+                Discover clubs where you can play, train,
+                and meet other players.
+            </p>
+
+        </div>
+
+
+        <div
+            id="club-list"
+            class="card-grid"
+        >
+
+            <!-- JavaScript will generate club cards -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Equipment -->
+
+    <section class="equipment-section">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                GEAR
+            </p>
+
+            <h2>Equipment Recommendations</h2>
+
+            <p>
+                Learn about equipment that can help improve
+                your padel experience.
+            </p>
+
+        </div>
+
+
+        <div
+            id="equipment-list"
+            class="equipment-grid"
+        >
+
+            <!-- JavaScript will generate equipment -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Equipment form -->
+
+    <section class="contact-section">
+
+        <div class="section-heading">
+
+            <h2>Ask the Community</h2>
+
+            <p>
+                Have a question about clubs or equipment?
+                Send us your question.
+            </p>
+
+        </div>
+
+
+        <form
+            action="form-action.html"
+            method="get"
+            class="contact-form"
+        >
+
+            <div class="form-group">
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    autocomplete="name"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="topic">
+                    Topic
+                </label>
+
+                <select
+                    id="topic"
+                    name="topic"
+                    required
+                >
+
+                    <option value="">
+                        Select a topic
+                    </option>
+
+                    <option value="club">
+                        Padel Clubs
+                    </option>
+
+                    <option value="racket">
+                        Rackets
+                    </option>
+
+                    <option value="shoes">
+                        Shoes
+                    </option>
+
+                    <option value="other">
+                        Other Equipment
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <button
+                class="button"
+                type="submit"
+            >
+                Send Question
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <h2>Padel Community Hub</h2>
+
+            <p>
+                A community website for padel players and enthusiasts.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h2>Quick Links</h2>
+
+            <a href="index.html">Home</a>
+            <a href="tournaments.html">Tournaments & Players</a>
+            <a href="clubs.html">Clubs & Equipment</a>
+            <a href="attributions.html">Attributions</a>
+
+        </div>
+
+
+        <div class="footer-project">
+
+            <h2>WDD231 Project</h2>
+
+            <p>
+                Created for the WDD231 Individual Website Project.
+            </p>
+
+            <a
+                href="https://www.youtube.com/watch?v=tp2obr_qNY8"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Project Demonstration Video
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; <span id="current-year"></span>
+            Padel Community Hub
+        </p>
+
+        <p>
+            Matias de la Rosa | Argentina
+        </p>
+
+        <p id="last-modified"></p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
