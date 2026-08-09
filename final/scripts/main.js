@@ -42,7 +42,6 @@ if (menuButton && navigation) {
     });
 }
 
-
 // -------------------------
 // Current year
 // -------------------------
@@ -52,7 +51,6 @@ const currentYear = document.querySelector("#current-year");
 if (currentYear) {
     currentYear.textContent = new Date().getFullYear();
 }
-
 
 // -------------------------
 // Last modified
